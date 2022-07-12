@@ -8,7 +8,7 @@ html {
 
 body {
     border: 2px solid black;
-    width: 600px;
+    width: 1000px;
     margin: 0 auto;
     background-color: salmon;
     padding: 0 20px 20px 20px;
@@ -24,4 +24,17 @@ h1 {
 img {
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+figure {
+    text-align: center;
+}
+
+#heading {
+    color: blue;
+}
+.popular {
+    border: 4px dotted yellow;
 }

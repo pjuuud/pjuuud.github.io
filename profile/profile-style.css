@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+}
+#navigation {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(163, 163, 128, 1);
+}
+
+#navigation a {
+    float: left;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.30em;
+}
+
+#navigation a {
+    display: block;
+    color: #333333;
+    text-align: center;
+    padding: 10px 85px;
+    text-decoration: none;
+}
+
+#navigation a:hover:not(.active) {
+    color: white;
+}
+
+.circle-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.circle-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+}
+
+.hightlight {
+    width: 500px;
+    height: 30px;
+    background: rgba(163, 163, 128, 1);
+    text-align: right;
+    padding-right: 25px;
+}
+
+.hightlight h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.75em;
+    color: #EFEBCE;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5em;
+    color: #333333;
+}
+
+.about-me {
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #333333;
+    margin-left: 50px;
+}
+
+.box {
+    margin: 50px;
+}
+
+.box li {
+    margin: 25px;
+}
+
+.box-skill {
+    margin-left: 50px;
+}
+
+table {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+th, td {
+    text-align: center;
+    padding: 18px;
+}
+
+.title {
+    background-color: #A3A380;
+}
+
+.skill {
+    background-color: #EFEBCE;
+}
+
+
+.content-right {
+    margin-left: 80px;
+    padding: 20px;
+    background: rgba(214, 206, 147, 0.75);
+    width: 700px;
+    height: 500px;
+    
+}
+
+.content-right p {
+    padding-left: 75px;
+    line-height: 30px;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.content-right h4 {
+    padding-left: 25px;
+}

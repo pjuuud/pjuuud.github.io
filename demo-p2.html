@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Demo problem </title>
+    </head>
+    <body>
+        <script>
+            let age = prompt("What is your age ?", 18);
+            let welcome = (age < 18 ? () => alert("Hello!") : () => alert("Greeting!"));
+            document.getElementById("demo").innerHTML = welcome();
+        </script>
+        <p id="demo"></p>
+    </body>
+</html>

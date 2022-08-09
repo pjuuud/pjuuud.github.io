@@ -1,23 +1,38 @@
-function getNum(n) {
-    numLst.push(n);
+function readInput() {
+    let numLst = [];
+    while(true) {
+        let num = Number(prompt("Enter an integer (a negative interger to quite):"));
+        if (!isInt(num)) continue;  //check int
+        if (num > 0) {
+            numLst.push(num);
+            continue;
+        } else {
+            return numLst;
+        }
+    }
 }
 
 function averageNum(n) {
-    var total = 0;
-    for(var i = 0; i < n.length; i++) {
+    let total = 0;
+    for (let i = 0; i < n.length; i++) {
         total += n[i];
     }
-    var avg = total / n.length;
-    if (isNaN(avg)) return null;
-    else return avg.toFixed(2);
-}
-
-function maxNum(n) {
-    return Math.max(n);
+    let avg = !n.length ? "0" : (total / n.length).toFixed(2);
+    return avg;
 }
 
 function minNum(n) {
-    return Math.min(n);
+    let minimun = !n.length ? "0" : Math.min(...n);
+    return minimun;
+}
+
+function maxNum(n) {
+    let maximum = !n.length ? "0" : Math.max(...n);
+    return maximum;
+}
+
+function displayStats(lst) {
+    alert('For the list '+ lst + ', the average is ' + averageNum(lst) + ', the minimun is ' + minNum(lst) + ', and the maximum is ' + maxNum(lst));
 }
 
 //check int
@@ -25,15 +40,6 @@ function isInt(n) {
     return n % 1 == 0;
 }
 
-const numLst = [];
-while(true) {
-    var num = Number(prompt("Enter an integer (a negative interger to quite):"))
-    if (!isInt(num)) continue;  //check int
-    if (num > 0) {
-        getNum(num);
-        continue;
-    } else {
-        alert('For the list '+ numLst + ', the average is ' + (averageNum(numLst) ?? "0") + ', the minimun is ' + (minNum(...numLst) ?? "0") + ', and the maximum is ' + (maxNum(...numLst) ?? "0"))
-        break;
-    }
-}
+//main
+let list  = readInput();
+displayStats(list);

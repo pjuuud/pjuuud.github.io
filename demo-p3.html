@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Demo problem </title>
+    </head>
+    <body>
+        <script>
+            while(true) {
+                let num = Number(prompt("Enter an interger : "));
+                let divideByTwo = !(num % 1 == 0) ? true : alert(num/2);
+            }
+            document.getElementById("demo").innerHTML = divideByTwo();
+        </script>
+        <p id="demo"></p>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 //create array for keep the menu
 const listOfMenu = [];
 //fetch menu to keep the default
-fetch('menu.json').then(response => {
+fetch('https://pjuuud.github.io/KinRaiDee/menu.json').then(response => {
     return response.json();
 }).then(data => {
     for(let menu of data) {
